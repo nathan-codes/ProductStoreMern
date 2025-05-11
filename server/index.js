@@ -12,9 +12,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/products", ProductRoute);
 
-app.get("/", () => {
-  res.send("Hitting the get endpoint");
-});
+
 
 app.listen(PORT, async () => {
   await connectDB();
